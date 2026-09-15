@@ -33,6 +33,7 @@ def test_calculate_overview():
     assert result["order_count"] == 3
     assert result["return_count"] == 1
 
+
 def test_aggregate_by_calculates_totals_per_group():
     data = pd.DataFrame({
         "order_id": ["00001", "00002", "00003"],
