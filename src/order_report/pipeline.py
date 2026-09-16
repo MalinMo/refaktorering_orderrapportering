@@ -29,7 +29,7 @@ def run_report(config: ReportConfig) -> dict[str, pd.DataFrame]:
     sales_by_category = aggregate_by(data, "product_category")
     sales_by_region = aggregate_by(data, "region")
     returns_by_category = aggregate_by(data, "product_category", sort_by="return_rate")
-    returns_by_category = returns_by_category.drop(columns="total_sales")
+    returns_by_category = returns_by_category.drop(columns="total_sales")                    # matchar originalets kolumner
 
     reports = {
         "overview": overview_df,
