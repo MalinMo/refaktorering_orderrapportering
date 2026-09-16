@@ -33,4 +33,4 @@ def aggregate_by(data: pd.DataFrame, group_column: str, sort_by: str = "total_sa
     result["total_sales"] = result["total_sales"].round(2)
     result["return_rate"] = (result["returns"]  / result["order_count"]).round(3)
 
-    return result.sort_values("total_sales", ascending=False,).reset_index(drop=True)
+    return result.sort_values(sort_by, ascending=False).reset_index(drop=True)

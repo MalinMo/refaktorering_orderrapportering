@@ -1,20 +1,6 @@
 """Publikt API för paketet order_report"""
 
-from .validation import (
-    validate_input,
-    clean_data
-)
+from order_report.config import ReportConfig
+from order_report.pipeline import run_report
 
-from .processing import (
-    calculate_order_value,
-    calculate_overview,
-    aggregate_by
-)
-
-__all__ = [
-    "validate_input",
-    "clean_data",
-    "calculate_order_value",
-    "calculate_overview",
-    "aggregate_by"
-]
+__all__ = ["ReportConfig", "run_report"]

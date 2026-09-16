@@ -52,7 +52,7 @@ Unknown,1,3196.0,1,1.0
 
 ### Fynd 3 - Upprepad kod
 
-**Observation:** Koden för result 1, result 2 och returns_by_category är nästan identiska, samma gruppering, avrundning, berökning och sortering.
+**Observation:** Koden för result 1, result 2 och returns_by_category är nästan identiska, samma gruppering, avrundning, beräkning och sortering.
 
 **Konsekvens:** Om beräkningslogiken behöver ändras måste ändringen göras på tre separata ställen i koden vilket ökar risken för fel.
 
@@ -62,7 +62,7 @@ Unknown,1,3196.0,1,1.0
 
 **Observation:** All kod ligger i ett enda try/except som fångar all typer av fel men inte specificerar vad som är fel.
 
-**Konsekvens:** Felet blir svårt att hitta t.ex. om en kloumn saknas vilken. 
+**Konsekvens:** Felet blir svårt att hitta t.ex. om en kolumn saknas, vilken kolumn. 
 
 **Förslag:** Använda ValueError och specifika meddelanden om vad som är fel.
 
